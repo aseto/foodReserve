@@ -51,22 +51,16 @@ void reservation::setNote(string newNote)
 
 string reservation::getDate()
 {
-    string dateString;
-    dateString = this->month.toString();
-    dateString.append("/");
-    dateString.append(this->day.toString());
-    dateString.append("/");
-    dateString.append(this->year.toString());
-    return dateString;
+    std::stringstream dateStream;
+    dateStream << this->month << "/" << this->day << "/" << this->year;
+    return dateStream.str();
 }
 
 string reservation::getTimeString()
 {
-    string timeString;
-    timeString = this->hour.toString();
-    timeString.append(":");
-    timeString.append(this->minute.toString());
-    return timeString;
+    std::stringstream timeStream;
+    timeStream << this->hour << ":" << this->minute;
+    return timeStream.str();
 }
 
 string reservation::getNote()
