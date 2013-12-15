@@ -16,11 +16,13 @@ public:
     bool setTime(string type, int value);
     void setNote(string newNote);
     void setParty(int numMembers);
+    void setName(string theName);
 
     string getDate();
     string getTimeString();
     string getNote();
     int getParty();
+    string getName();
 
 private:
     int month;
@@ -30,6 +32,7 @@ private:
     int minute;
     int partyMembers;
     string note;
+    string name;
 };
 
 #endif // RESERVATION_H

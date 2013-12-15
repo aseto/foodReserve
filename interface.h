@@ -13,6 +13,7 @@ class interface
     interface();
     reservation parseLine(string line);
     string createLine(reservation theReservation);
+    void makeReservation();
   private:
 
 };

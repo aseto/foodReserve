@@ -41,12 +41,17 @@ bool reservation::setTime(string type, int value)
 
 void reservation::setParty(int numMembers)
 {
-    partyMembers = numMembers;
+    this->partyMembers = numMembers;
 }
 
 void reservation::setNote(string newNote)
 {
-    note = newNote;
+    this->note = newNote;
+}
+
+void reservation::setName(string theName)
+{
+    this->name = name;
 }
 
 string reservation::getDate()
@@ -71,4 +76,9 @@ string reservation::getNote()
 int reservation::getParty()
 {
     return partyMembers;
+}
+
+string reservation::getName()
+{
+    return name;
 }

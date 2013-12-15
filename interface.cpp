@@ -16,4 +16,10 @@ reservation interface::parseLine(string line)
 string interface::createLine(reservation theReservation)
 {
   string line;
+
+}
+
+void interface::makeReservation()
+{
+
 }
