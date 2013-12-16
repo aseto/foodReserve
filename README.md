@@ -14,17 +14,11 @@ In order to make a clean state.  Then enter
 $make
 to create the executable for the reservation system.
 
-To start the reservation system, type ./reserve followed by 3 numbers.
-- The first number is how many small tables (seat up to 2 people) are in the restaurant
-- The second number is how many medium tables (seat up to 4 people) are in the restaurant
-- The third number is how many large tables (seat up to 8 people) are in the restaurant
+To start the reservation system, type:
+$./reserve
 
-If you do not add the three arguements, the program will not run.
-
-So for example to run the program if you have a restaurant with 12 small tables,
-8 medium tables, and 2 large tables, enter:
-
-$./reserve 12 8 2
+This will begin the prompt to set up how your restaurant is layed out
+and will then move to the reservation system after you've been set up
 
 ---
 
