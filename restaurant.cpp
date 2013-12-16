@@ -41,20 +41,30 @@ bool restaurant::cancelReservation(string cancelName)
   string date, time, type, name;
   bool exists = false;
 
+  string testLine;
+  string title;
+  getline (myRestaurant, title);
   while (!myRestaurant.eof())
   {
-    myRestaurant >> date >> time >> type >> name;
+    getline (myRestaurant, testLine);
+    stringstream stream(testLine);
+    stream >> date >> time >> type >> name;
+
     if (name == cancelName)
     {
-      exists == true;
-      continue;
+      exists = true;
     }
-    good << date << time << type << name;
+    else
+    {
+      good << date << " " << time << " " << type << " " << name << "\n";
+    }
   }
   myRestaurant.close();
 
+
   if (exists) {
     fstream updatedList("reservations.txt", fstream::out);
+    updatedList << "Date / Time / Table Type / Name \n";
     updatedList << good.str();
     return true;
   }
