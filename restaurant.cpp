@@ -28,12 +28,6 @@ restaurant::restaurant(int small, int medium, int large)
 // Creates a reservation and adds it to the list
 bool restaurant::makeReservation(string date, string time, string table, string name)
 {
-  if (table != "small" | table != "medium" | table != "large")
-  {
-    cout << "Incorrect table size" << endl;
-    return false;
-  }
-
   fstream myRestaurant("reservations.txt", fstream::out | fstream::app);
   myRestaurant << date << " " << time << " " << table << " " << name << "\n";
   return true;
