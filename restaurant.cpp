@@ -44,9 +44,9 @@ bool restaurant::cancelReservation(string cancelName)
   string testLine;
   string title;
   getline (myRestaurant, title);
+  getline (myRestaurant, testLine);
   while (!myRestaurant.eof())
   {
-    getline (myRestaurant, testLine);
     stringstream stream(testLine);
     stream >> date >> time >> type >> name;
 
@@ -58,6 +58,7 @@ bool restaurant::cancelReservation(string cancelName)
     {
       good << date << " " << time << " " << type << " " << name << "\n";
     }
+    getline (myRestaurant, testLine);
   }
   myRestaurant.close();
 
