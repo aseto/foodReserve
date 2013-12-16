@@ -27,7 +27,7 @@ class restaurant
     int mediumTables;
     int largeTables;
 
-    //bool tableFree(string type, string date, string time);
+    bool tableFree(string type, string date, string time);
 };
 
 

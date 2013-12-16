@@ -1,8 +1,7 @@
 #include "reservation.h"
-#include "interface.h"
+#include "restaurant.h"
 #include <iostream>
 #include <fstream>
-#include "restaurant.h"
 #include <string> 
 #include <cstdlib>
 using namespace std;
