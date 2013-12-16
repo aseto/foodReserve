@@ -94,6 +94,10 @@ int main(int argc, char *argv[])
     else if (command == "exit") {
       return 0;
     }
+    else {
+      cout << "You have not entered a correct command" << endl;
+      cout << "For a list of commands, type 'help'" << endl;
+    }
   }
 
 };
