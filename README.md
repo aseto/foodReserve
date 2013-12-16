@@ -5,7 +5,7 @@ Restaurant reservations
 
 Restaurant Reservation System
 
-contributors: aseto
+contributors: aseto, JoeAcanfora
 url: https://github.com/aseto/foodReserve
 
 To set up this program, first enter
