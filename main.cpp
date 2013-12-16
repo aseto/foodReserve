@@ -8,16 +8,24 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-    string var1, var2, var3;
-    var1 = argv[1];
-    var2 = argv[2];
-    var3 = argv[3];
+  string var1, var2, var3;
+
+  cout << "First, please set up your restaurant" << endl;
+  cout << "How many small tables (seat up to 2) are there? ";
+  cin >> var1;
+  cout << "How many medium tables (seat up to 4) are there? ";
+  cin >> var2;
+  cout << "How many large tables (seat up to 8) are there? ";
+  cin >> var3;
+
+    //var1 = argv[1];
+    //var2 = argv[2];
+    //var3 = argv[3];
     int small, medium, large;
     small = atoi(var1.c_str());
     medium = atoi(var2.c_str());
     large = atoi(var3.c_str());
     restaurant myRestaurant(small, medium, large);
-  
 
   cout << "To make a reservation, type 'make'" << endl;
   cout << "To cancel a reservation, type 'cancel'" << endl;
