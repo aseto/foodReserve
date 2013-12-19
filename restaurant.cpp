@@ -147,6 +147,7 @@ string restaurant::listReservations()
 		list += currentLine;
 		list += '\n';
 	}
+        list += "End of reservations, please type in another command \n";
 	return list;
 }
 
@@ -166,6 +167,7 @@ void restaurant::listReservations(string date)
 		}
 		myRestaurant >> testLine;
 	}
+	cout << "End of reservations, please type in another command" << endl;
 }
 /**
  * saves restaurant info to a file.

@@ -17,10 +17,11 @@ int main(int argc, char *argv[])
 	//var3 = argv[3];
 
 	restaurant myRestaurant;
-
+	// Checking if the restaurant is new
 	if(myRestaurant.isNew()){
 		newRestaurant(&myRestaurant);
 	}
+	// Otherwise assume the last restaurant
 	else{
 		cout << "Welcome back to " << myRestaurant.getRestaurantName() << " reservation system." << endl;
 		cout << "You have " << myRestaurant.getNumSmallTables() << " small tables," << endl;
@@ -34,6 +35,7 @@ int main(int argc, char *argv[])
 	string command;
 	string makeDate, makeTime, makeTable, makeName;
 
+	// Keep the user in the program
 	while(1)
 	{
 		cin >> command;
